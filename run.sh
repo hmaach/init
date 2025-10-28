@@ -2,7 +2,7 @@
 set -e  
 
 ./cmd/setupt_clock.sh
-./cmd/setupt_git.sh
+./cmd/setup_git.sh
 
 if ! command -v docker &> /dev/null; then
   echo "🐋 Docker not found — installing..."
