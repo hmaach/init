@@ -1,14 +1,26 @@
 import time
+import argparse
 from Xlib import X, display
 from Xlib.ext import xtest
 
-# Important: run this "pip install --user python-xlib" before runing the programe
+# Important: run "pip install --user python-xlib" before running this program
 
-
-def keep_awake():
+def keep_awake(duration_minutes=None):
+    """
+    Simulates mouse movement to keep the system awake.
+    duration_minutes: optional, stop after this many minutes
+    """
     dsp = display.Display()
+    start_time = time.time()
+    duration_seconds = duration_minutes * 60 if duration_minutes else None
+
     try:
         while True:
+            # Check if duration is set and time is up
+            if duration_seconds and (time.time() - start_time >= duration_seconds):
+                print("\nTimer finished. Exiting.")
+                break
+
             # Get current pointer position
             pointer = dsp.screen().root.query_pointer()
             x, y = pointer.root_x, pointer.root_y
@@ -24,4 +36,11 @@ def keep_awake():
 
 
 if __name__ == "__main__":
-    keep_awake()
+    parser = argparse.ArgumentParser(description="Keep Linux system awake by simulating mouse activity.")
+    parser.add_argument(
+        "-t", "--timer",
+        type=int,
+        help="Optional timer in minutes. The program will exit after this time."
+    )
+    args = parser.parse_args()
+    keep_awake(duration_minutes=args.timer)
