@@ -65,19 +65,19 @@ If you skip this step, newly installed commands may not be immediately available
 
 # Scripts Overview
 
-| Script                 | Role                                            | Quick Run Command                                                                                             |
-| ---------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| install_discord.sh     | Installs Discord locally in `~/Applications`    | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_discord.sh)`     |
-| install_docker.sh      | Installs Docker in rootless mode                | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_docker.sh)`      |
-| install_mkcert.sh      | Installs mkcert for local HTTPS certificates    | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_mkcert.sh)`      |
-| install_mongosh.sh     | Installs MongoDB shell                          | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_mongosh.sh)`     |
-| install_mvn.sh         | Installs Apache Maven                           | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_mvn.sh)`         |
-| install_ng.sh          | Installs Angular CLI                            | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_ng.sh)`          |
-| install_tmux.sh        | Installs tmux locally                           | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_tmux.sh)`        |
-| setup_git.sh           | Configures Git username and email interactively | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/setup_git.sh)`           |
-| setup_clock.sh         | Enables seconds in GNOME clock                  | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/setupt_clock.sh)`        |
-| setup_refresh_rates.sh | Adds custom monitor refresh rate                | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/setup_refresh_rates.sh)` |
-| update_java_to_v21.sh  | Installs Java 21 using SDKMAN                   | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/update_java_to_v21.sh)`  |
+| Script                 | Quick Run Command                                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
+| install_discord.sh     | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_discord.sh)`     |
+| install_docker.sh      | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_docker.sh)`      |
+| install_mkcert.sh      | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_mkcert.sh)`      |
+| install_mongosh.sh     | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_mongosh.sh)`     |
+| install_mvn.sh         | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_mvn.sh)`         |
+| install_ng.sh          | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_ng.sh)`          |
+| install_tmux.sh        | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/install_tmux.sh)`        |
+| setup_git.sh           | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/setup_git.sh)`           |
+| setup_clock.sh         | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/setupt_clock.sh)`        |
+| setup_refresh_rates.sh | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/setup_refresh_rates.sh)` |
+| update_java_to_v21.sh  | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/update_java_to_v21.sh)`  |
 
 ---
 
