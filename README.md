@@ -78,6 +78,8 @@ If you skip this step, newly installed commands may not be immediately available
 | setup_clock.sh         | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/setupt_clock.sh)`        |
 | setup_refresh_rates.sh | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/setup_refresh_rates.sh)` |
 | update_java_to_v21.sh  | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/update_java_to_v21.sh)`  |
+| auto.sh                | `bash <(curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/auto.sh)`                |
+| auto.sh                | `curl -fsSL https://raw.githubusercontent.com/hmaach/init/refs/heads/main/cmd/clipboard  \| sh`               |
 
 ---
 
@@ -146,6 +148,12 @@ The goal of this project is to build a **collection of reliable scripts for sett
 ---
 
 # Tips
+
+- Usage of `auto.sh` :
+
+```sh
+$ ./auto.sh <name of the binary you want to work when stating the session>
+```
 
 - Use `source run.sh` if you want environment changes applied immediately.
 - All installations occur inside your **home directory**.
